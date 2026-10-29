@@ -140,8 +140,8 @@
 
     closeBtn.addEventListener('click', close);
     lightbox.addEventListener('click', function (e) { if (e.target === lightbox) close(); });
-    prevBtn.addEventListener('click', function () { show(currentGroup, currentIndex - 1); });
-    nextBtn.addEventListener('click', function () { show(currentGroup, currentIndex + 1); });
+    prevBtn.addEventListener('click', function (e) { e.preventDefault(); show(currentGroup, currentIndex - 1); });
+    nextBtn.addEventListener('click', function (e) { e.preventDefault(); show(currentGroup, currentIndex + 1); });
     document.addEventListener('keydown', function (e) {
       if (!lightbox.classList.contains('is-open')) return;
       if (e.key === 'Escape') close();
@@ -165,7 +165,7 @@
       dot.type = 'button';
       dot.className = 'process-carousel__dot';
       dot.setAttribute('aria-label', 'Шаг ' + (i + 1));
-      dot.addEventListener('click', function () { goTo(i); });
+      dot.addEventListener('click', function (e) { e.preventDefault(); goTo(i); });
       dotsWrap.appendChild(dot);
       dots.push(dot);
     });
@@ -194,8 +194,8 @@
       nextBtn.disabled = i === slides.length - 1;
     }
 
-    prevBtn.addEventListener('click', function () { goTo(activeIndex() - 1); });
-    nextBtn.addEventListener('click', function () { goTo(activeIndex() + 1); });
+    prevBtn.addEventListener('click', function (e) { e.preventDefault(); goTo(activeIndex() - 1); });
+    nextBtn.addEventListener('click', function (e) { e.preventDefault(); goTo(activeIndex() + 1); });
     var scrollTimer = null;
     track.addEventListener('scroll', function () {
       clearTimeout(scrollTimer);

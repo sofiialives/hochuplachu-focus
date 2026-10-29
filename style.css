@@ -2080,7 +2080,7 @@ a { color: inherit; text-decoration: none; }
    (screen hole inside iphone-frame.png: left 9.05% / top 4.65% / 81.7% x 89.4% — extends under the dynamic island so the screenshot shows through at the very top)
    ========================================================================== */
 .phone-mock {
-  position: relative; width: 108px; aspect-ratio: 442 / 881; flex-shrink: 0;
+  position: relative; width: 168px; aspect-ratio: 442 / 881; flex-shrink: 0;
   cursor: zoom-in; border: none; background: none; padding: 0;
   transition: transform .35s var(--ease-spring, cubic-bezier(.22,1,.36,1)), filter .3s;
   filter: drop-shadow(0 10px 22px -8px rgba(0,0,0,.45));
@@ -2112,7 +2112,7 @@ a { color: inherit; text-decoration: none; }
 .lightbox {
   position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center;
   background: rgba(8,8,14,.86); backdrop-filter: blur(6px); opacity: 0; pointer-events: none;
-  transition: opacity .3s var(--ease-ios, ease);
+  transition: opacity .3s var(--ease-ios, ease); overscroll-behavior: contain;
 }
 .lightbox.is-open { opacity: 1; pointer-events: auto; }
 .lightbox__frame {
@@ -2152,6 +2152,7 @@ a { color: inherit; text-decoration: none; }
 .process-carousel__track {
   display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;
   scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 4px;
+  overscroll-behavior-x: contain; overscroll-behavior-y: none;
 }
 .process-carousel__track::-webkit-scrollbar { display: none; }
 .process-carousel__slide {
@@ -2185,4 +2186,16 @@ a { color: inherit; text-decoration: none; }
   .process-carousel__slide { grid-template-columns: 1fr; text-align: left; min-height: 0; }
   .process-carousel__phones { justify-content: flex-start; margin-top: 20px; }
   .phone-mock { width: 92px; }
+}
+
+/* ---- KPI stat (замена сетки "минимально/оптимально/лучший результат") ---- */
+.kpi-stat { margin-top: 8px; }
+.kpi-stat__num {
+  font-family: var(--mono); font-weight: 800; font-size: 72px; line-height: 1;
+  letter-spacing: -0.02em; background: linear-gradient(135deg, var(--blue, #504CFF), var(--purple, #854CFF));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.kpi-stat__label { margin-top: 14px; font-size: 16px; line-height: 1.5; color: var(--fg2); max-width: 480px; }
+@media (max-width: 640px) {
+  .kpi-stat__num { font-size: 52px; }
 }

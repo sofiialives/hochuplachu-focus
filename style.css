@@ -2075,3 +2075,114 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 640px) {
   .feature-panel__icon-ring { display: none; }
 }
+/* ==========================================================================
+   PHONE MOCKUPS + LIGHTBOX + PROCESS CAROUSEL
+   (screen hole inside iphone-frame.png: left 9.05% / top 4.65% / 81.7% x 89.4% — extends under the dynamic island so the screenshot shows through at the very top)
+   ========================================================================== */
+.phone-mock {
+  position: relative; width: 108px; aspect-ratio: 442 / 881; flex-shrink: 0;
+  cursor: zoom-in; border: none; background: none; padding: 0;
+  transition: transform .35s var(--ease-spring, cubic-bezier(.22,1,.36,1)), filter .3s;
+  filter: drop-shadow(0 10px 22px -8px rgba(0,0,0,.45));
+}
+.phone-mock:hover, .phone-mock:focus-visible { transform: translateY(-6px) scale(1.035); }
+.phone-mock:focus-visible { outline: 2px solid var(--blue, #504CFF); outline-offset: 4px; }
+.phone-mock__screen {
+  position: absolute; left: 9.05%; top: 4.65%; width: 81.7%; height: 89.4%;
+  overflow: hidden; border-radius: 16% / 8%; background: #0b0b10;
+}
+.phone-mock__screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.phone-mock__frame { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.phone-mock__zoom {
+  position: absolute; right: 10%; bottom: 8%; z-index: 3; width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(10,10,16,.72); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center;
+  color: #fff; opacity: 0; transform: scale(.7); transition: opacity .25s, transform .25s;
+}
+.phone-mock:hover .phone-mock__zoom, .phone-mock:focus-visible .phone-mock__zoom { opacity: 1; transform: scale(1); }
+
+.phone-row { display: flex; gap: 14px; align-items: flex-end; flex-wrap: wrap; }
+.phone-row .phone-mock:nth-child(1) { transform: rotate(-4deg); }
+.phone-row .phone-mock:nth-child(2) { transform: rotate(0deg) translateY(-8px); }
+.phone-row .phone-mock:nth-child(3) { transform: rotate(4deg); }
+.phone-row .phone-mock:nth-child(1):hover, .phone-row .phone-mock:nth-child(1):focus-visible { transform: rotate(-4deg) translateY(-6px) scale(1.035); }
+.phone-row .phone-mock:nth-child(2):hover, .phone-row .phone-mock:nth-child(2):focus-visible { transform: translateY(-14px) scale(1.035); }
+.phone-row .phone-mock:nth-child(3):hover, .phone-row .phone-mock:nth-child(3):focus-visible { transform: rotate(4deg) translateY(-6px) scale(1.035); }
+
+/* ---- Lightbox ---- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center;
+  background: rgba(8,8,14,.86); backdrop-filter: blur(6px); opacity: 0; pointer-events: none;
+  transition: opacity .3s var(--ease-ios, ease);
+}
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
+.lightbox__frame {
+  position: relative; max-width: min(360px, 86vw); width: 100%; aspect-ratio: 442 / 881;
+  transform: scale(.92) translateY(16px); transition: transform .35s var(--ease-spring, cubic-bezier(.22,1,.36,1));
+}
+.lightbox.is-open .lightbox__frame { transform: scale(1) translateY(0); }
+.lightbox__screen {
+  position: absolute; left: 9.05%; top: 4.65%; width: 81.7%; height: 89.4%;
+  overflow: hidden; border-radius: 16% / 8%; background: #0b0b10;
+}
+.lightbox__screen img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+.lightbox__frame-img { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.lightbox__close {
+  position: absolute; top: -44px; right: 0; width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: #fff;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background .2s, transform .2s;
+}
+.lightbox__close:hover { background: rgba(255,255,255,.18); transform: rotate(90deg); }
+.lightbox__nav {
+  position: absolute; top: 50%; translate: 0 -50%; width: 38px; height: 38px; border-radius: 50%;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18); color: #fff;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background .2s;
+}
+.lightbox__nav:hover { background: rgba(255,255,255,.18); }
+.lightbox__nav--prev { left: -52px; }
+.lightbox__nav--next { right: -52px; }
+.lightbox__nav[hidden] { display: none; }
+@media (max-width: 680px) {
+  .lightbox__nav--prev { left: 6px; }
+  .lightbox__nav--next { right: 6px; }
+}
+
+/* ---- Process carousel (заменяет статичную сетку цифр 01-05) ---- */
+.process-carousel { position: relative; }
+.process-carousel__viewport { overflow: hidden; }
+.process-carousel__track {
+  display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none; -ms-overflow-style: none; padding-bottom: 4px;
+}
+.process-carousel__track::-webkit-scrollbar { display: none; }
+.process-carousel__slide {
+  scroll-snap-align: start; flex: 0 0 100%; display: grid; grid-template-columns: 1fr auto;
+  gap: 28px; align-items: center; min-height: 220px;
+}
+.process-carousel__card { max-width: 420px; }
+.process-carousel__step-label { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.process-carousel__step-num {
+  width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono, monospace); font-size: 13px; font-weight: 700;
+  background: linear-gradient(135deg, var(--blue, #504CFF), var(--purple, #854CFF)); color: #fff; flex-shrink: 0;
+}
+.process-carousel__step-total { font-family: var(--font-mono, monospace); font-size: 12px; color: var(--muted, rgba(255,255,255,.5)); letter-spacing: .04em; }
+.process-carousel__phones { display: flex; justify-content: center; }
+.process-carousel__arrows { display: flex; align-items: center; gap: 14px; margin-top: 24px; }
+.process-carousel__arrow {
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04); color: #fff; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: background .2s, transform .2s;
+}
+.process-carousel__arrow:hover { background: rgba(255,255,255,.12); }
+.process-carousel__arrow:active { transform: scale(.92); }
+.process-carousel__arrow:disabled { opacity: .3; cursor: default; }
+.process-carousel__arrow:disabled:hover { background: rgba(255,255,255,.04); }
+.process-carousel__dots { display: flex; gap: 8px; }
+.process-carousel__dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.18); border: none; cursor: pointer; padding: 0; transition: background .25s, transform .25s; }
+.process-carousel__dot.is-active { background: linear-gradient(135deg, var(--blue, #504CFF), var(--purple, #854CFF)); transform: scale(1.3); }
+
+@media (max-width: 760px) {
+  .process-carousel__slide { grid-template-columns: 1fr; text-align: left; min-height: 0; }
+  .process-carousel__phones { justify-content: flex-start; margin-top: 20px; }
+  .phone-mock { width: 92px; }
+}

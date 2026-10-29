@@ -96,7 +96,7 @@
           </div>
           <div class="hero__meta-item">
             <div class="hero__meta-label">Для старта</div>
-            <div class="hero__meta-value">1790 $</div>
+            <div class="hero__meta-value">1990 $</div>
           </div>
         </div>
 
@@ -126,7 +126,7 @@
         <div class="section__grid section__grid--2 reveal" data-delay="100">
           <div class="about__callout glass">
             <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
-            <p><span class="about__callout-strong">Организаторы путешествий и турфирмы.</span> Их клиенты едут в путешествия и не понимают, как оплачивать покупки за границей, например в Китае или Таиланде. Карта закрывает эту проблему, а для турфирмы становится дополнением к основной услуге и источником дополнительных продаж.</p>
+            <p><span class="about__callout-strong">Организаторы путешествий и турфирмы.</span> Их клиенты едут в путешествия и не понимают, как оплачивать покупки за границей. Карта закрывает эту проблему, а для турфирмы становится дополнением к основной услуге и источником дополнительных продаж.</p>
           </div>
           <div class="about__callout glass">
             <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
@@ -215,44 +215,136 @@
           <h3 class="h2" style="font-size:clamp(20px,2.4vw,26px);max-width:620px;margin-top:4px">От холодного контакта до работающего партнёра</h3>
         </div>
 
-        <div class="process reveal" data-delay="90" style="margin-top:40px">
-          <div class="process__line" aria-hidden="true"></div>
-          <div class="process__grid">
-            <div class="process__step">
-              <div class="process__num process__num--active">01</div>
-              <div class="process__card glass">
-                <div class="process__title">Холодный контакт</div>
-                <div class="process__desc">Менеджер по продажам пишет на холодную, отвечает на первые вопросы и проводит стартовый онбординг.</div>
+        <div class="process-carousel reveal" data-delay="90" style="margin-top:40px" id="processCarousel">
+          <div class="process-carousel__viewport">
+            <div class="process-carousel__track" id="processTrack">
+
+              <div class="process-carousel__slide">
+                <div class="process-carousel__card glass" style="padding:28px">
+                  <div class="process-carousel__step-label">
+                    <span class="process-carousel__step-num">01</span>
+                    <span class="process-carousel__step-total">ШАГ 1 ИЗ 5</span>
+                  </div>
+                  <div class="process__title">Холодный контакт</div>
+                  <div class="process__desc">Менеджер по продажам пишет на холодную, отвечает на первые вопросы и проводит стартовый онбординг.</div>
+                </div>
+                <div class="process-carousel__phones">
+                  <div class="phone-row">
+                    <button type="button" class="phone-mock" data-group="step1" data-index="0" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s1.jpg" alt="Переписка с партнёром" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                    <button type="button" class="phone-mock" data-group="step1" data-index="1" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s2.jpg" alt="Переписка с партнёром" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="process__step">
-              <div class="process__num process__num--active">02</div>
-              <div class="process__card glass">
-                <div class="process__title">Карточка в CRM</div>
-                <div class="process__desc">Если партнёр заинтересован, менеджер создаёт в CRM карточку нового амбассадора и нажимает «Отправить».</div>
+
+              <div class="process-carousel__slide">
+                <div class="process-carousel__card glass" style="padding:28px">
+                  <div class="process-carousel__step-label">
+                    <span class="process-carousel__step-num">02</span>
+                    <span class="process-carousel__step-total">ШАГ 2 ИЗ 5</span>
+                  </div>
+                  <div class="process__title">Карточка в CRM</div>
+                  <div class="process__desc">Если партнёр заинтересован, менеджер создаёт в CRM карточку нового амбассадора и нажимает «Отправить».</div>
+                </div>
+                <div class="process-carousel__phones">
+                  <div class="phone-row">
+                    <button type="button" class="phone-mock" data-group="step2" data-index="0" aria-label="Открыть скриншот CRM">
+                      <span class="phone-mock__screen"><img src="./images/phone/s3.jpg" alt="Карточка амбассадора в CRM" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="process__step">
-              <div class="process__num process__num--active">03</div>
-              <div class="process__card glass">
-                <div class="process__title">Приём в Telegram</div>
-                <div class="process__desc">Аккаунт-менеджер принимает карточку в CRM и пишет амбассадору в Telegram.</div>
+
+              <div class="process-carousel__slide">
+                <div class="process-carousel__card glass" style="padding:28px">
+                  <div class="process-carousel__step-label">
+                    <span class="process-carousel__step-num">03</span>
+                    <span class="process-carousel__step-total">ШАГ 3 ИЗ 5</span>
+                  </div>
+                  <div class="process__title">Приём в Telegram</div>
+                  <div class="process__desc">Аккаунт-менеджер принимает карточку в CRM и пишет амбассадору в Telegram.</div>
+                </div>
+                <div class="process-carousel__phones">
+                  <div class="phone-row">
+                    <button type="button" class="phone-mock" data-group="step3" data-index="0" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s4.jpg" alt="Приём амбассадора в Telegram" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="process__step">
-              <div class="process__num process__num--active">04</div>
-              <div class="process__card glass">
-                <div class="process__title">Онбординг и карта</div>
-                <div class="process__desc">Аккаунт-менеджер проводит созвон, выдаёт бесплатную тестовую карту и промокод, подключает к программе.</div>
+
+              <div class="process-carousel__slide">
+                <div class="process-carousel__card glass" style="padding:28px">
+                  <div class="process-carousel__step-label">
+                    <span class="process-carousel__step-num">04</span>
+                    <span class="process-carousel__step-total">ШАГ 4 ИЗ 5</span>
+                  </div>
+                  <div class="process__title">Онбординг и карта</div>
+                  <div class="process__desc">Аккаунт-менеджер проводит созвон, выдаёт бесплатную тестовую карту и промокод, подключает к программе.</div>
+                </div>
+                <div class="process-carousel__phones">
+                  <div class="phone-row">
+                    <button type="button" class="phone-mock" data-group="step4" data-index="0" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s5.jpg" alt="Онбординг амбассадора" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                    <button type="button" class="phone-mock" data-group="step4" data-index="1" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s6.jpg" alt="Онбординг амбассадора" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                    <button type="button" class="phone-mock" data-group="step4" data-index="2" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s7.jpg" alt="Онбординг амбассадора" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="process__step">
-              <div class="process__num process__num--active">05</div>
-              <div class="process__card glass">
-                <div class="process__title">Сопровождение</div>
-                <div class="process__desc">Дальше аккаунт-менеджер сопровождает амбассадора и развивает его продажи.</div>
+
+              <div class="process-carousel__slide">
+                <div class="process-carousel__card glass" style="padding:28px">
+                  <div class="process-carousel__step-label">
+                    <span class="process-carousel__step-num">05</span>
+                    <span class="process-carousel__step-total">ШАГ 5 ИЗ 5</span>
+                  </div>
+                  <div class="process__title">Сопровождение</div>
+                  <div class="process__desc">Дальше аккаунт-менеджер сопровождает амбассадора и развивает его продажи.</div>
+                </div>
+                <div class="process-carousel__phones">
+                  <div class="phone-row">
+                    <button type="button" class="phone-mock" data-group="step5" data-index="0" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s8.jpg" alt="Сопровождение амбассадора" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                    <button type="button" class="phone-mock" data-group="step5" data-index="1" aria-label="Открыть скриншот переписки">
+                      <span class="phone-mock__screen"><img src="./images/phone/s9.jpg" alt="Сопровождение амбассадора" loading="lazy"></span>
+                      <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                      <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                    </button>
+                  </div>
+                </div>
               </div>
+
             </div>
+          </div>
+          <div class="process-carousel__arrows">
+            <button type="button" class="process-carousel__arrow" id="processPrev" aria-label="Предыдущий шаг"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <div class="process-carousel__dots" id="processDots"></div>
+            <button type="button" class="process-carousel__arrow" id="processNext" aria-label="Следующий шаг"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
           </div>
         </div>
 
@@ -395,6 +487,14 @@
                 <li>Аккаунт-менеджер принимает амбассадора через CRM и связывается с ним в Telegram</li>
                 <li>Все амбассадоры, их источник и статус видны в одном месте</li>
               </ul>
+              <div class="mono-caption" style="margin:22px 0 10px">В нашей CRM добавим вкладку</div>
+              <div class="phone-row">
+                <button type="button" class="phone-mock" data-group="crm" data-index="0" aria-label="Открыть скриншот CRM">
+                  <span class="phone-mock__screen"><img src="./images/phone/s-crm.jpg" alt="Новая вкладка «Хочу Плачу!» в CRM" loading="lazy"></span>
+                  <img class="phone-mock__frame" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+                  <span class="phone-mock__zoom" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+                </button>
+              </div>
               </div>
             </div>
           </div>
@@ -470,7 +570,7 @@
         <div class="goals-grid reveal" data-delay="60">
           <div class="goal-card glass">
             <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
-            <p><b>Задачи.</b> Доска «Сегодня / В процессе / Готово» с вкладками по отделам, включая отдел закупов. Двигать можно только свои задачи.</p>
+            <p><b>Задачи.</b> Доска «Сегодня / В процессе / Готово» с вкладками по отделам, включая отдел закупов и отдел Хочу Плачу. Двигать можно только свои задачи.</p>
           </div>
           <div class="goal-card glass">
             <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
@@ -478,7 +578,7 @@
           </div>
           <div class="goal-card glass">
             <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
-            <p><b>Клиенты и архив.</b> Отдельное пространство под каждый проект. Для Вас будет добавлена новая вкладка приёма амбассадоров.</p>
+            <p><b>Клиенты и архив.</b> Новая вкладка.</p>
           </div>
         </div>
 
@@ -508,6 +608,53 @@
       </div>
     </section>
 
+    <!-- ============ 6.5 МИНИМАЛЬНЫЙ KPI ============ -->
+    <section class="section" id="sec-kpi" data-dot="KPI">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">TARGET</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Минимальный KPI</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Какой результат мы гарантируем</h2>
+          <p class="p-body" style="margin-top:20px;max-width:800px;margin-bottom:0">
+            Минимальный KPI — это планка, которую за <span class="hl">1,5 месяца</span> вместе приводят менеджер по холодным заявкам и аккаунт-менеджер. Три уровня результата:
+          </p>
+        </div>
+
+        <div class="grid-3 reveal" data-delay="30">
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10M4 19h16M4 19l4-4"/><rect x="2.6" y="16" width="3" height="3" rx="0.6"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Минимальная планка</div>
+              <div class="role-card__count">20</div>
+            </div>
+            <div class="role-card__desc">Нижняя граница результата за 1,5 месяца работы фокус-группы.</div>
+          </div>
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V13M11 19V7M18 19V4"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Оптимальная планка</div>
+              <div class="role-card__count">35</div>
+            </div>
+            <div class="role-card__desc">Ожидаемый результат при штатной работе команды без сбоев.</div>
+          </div>
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.3 5.2 5.7.6-4.3 3.9 1.2 5.6L12 15l-5 2.8 1.2-5.6-4.3-3.9 5.7-.6z"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Лучший результат</div>
+              <div class="role-card__count">40–45</div>
+            </div>
+            <div class="role-card__desc">Верхняя планка при сильной динамике сегментов и быстрой раскачке.</div>
+          </div>
+        </div>
+
+        <div class="about__callout glass reveal" data-delay="70" style="margin-top:28px">
+          <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Важно: речь о качественных амбассадорах.</span> Это не ребята, которые разово сделали пару продаж и пропали, а партнёры, с которыми можно работать год, два, три — и которые стабильно приносят продажи.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ 7. РЕЗУЛЬТАТ ============ -->
     <section class="section" id="sec-result" data-dot="Итог">
       <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">RESULT</div>
@@ -515,7 +662,7 @@
       <div class="container section__pad-top">
         <div class="reveal" data-delay="0" style="margin-bottom:16px">
           <div class="pill"><span class="pill__dot"></span>Итог</div>
-          <h2 class="h2" style="margin-top:24px;max-width:680px">Что вы получите к концу первого месяца</h2>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Что вы получите за 1,5 месяца</h2>
         </div>
 
         <div class="rubric-grid reveal" data-delay="40" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:32px">
@@ -533,7 +680,7 @@
           <div class="quote-card__mark" aria-hidden="true">&rdquo;</div>
           <div class="quote-card__content">
             <p class="quote-card__text">
-              Мы не просто ищем амбассадоров — мы строим управляемый отдел продаж по рекомендациям: с процессом, мотивацией и отчётностью, которые работают без ручного контроля.
+              Мы не просто ищем амбассадоров — мы строим управляемый отдел продаж по рекомендациям: с процессом, мотивацией и отчётностью.
             </p>
           </div>
         </div>
@@ -554,7 +701,7 @@
           <div class="pricing-card pricing-card--highlight glass pricing-card--magnetic" id="magneticCard">
             <div class="pricing-card__badge">Запуск и ведение</div>
             <div class="mono-caption">УСЛУГИ АГЕНТСТВА</div>
-            <div class="pricing-card__price"><span class="pricing-card__amount">1790 $</span><span class="pricing-card__period">за проект</span></div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">1990 $</span><span class="pricing-card__period">за проект</span></div>
             <p class="pricing-card__desc">Рекрутинг и обучение команды, рабочая среда, новая вкладка в CRM, отчётность, мотивация и ведение направления</p>
             <div class="pricing-card__sep pricing-card__sep--highlight"></div>
             <div class="pricing-card__features">
@@ -579,41 +726,6 @@
         <p class="p-body reveal" data-delay="80" style="max-width:720px;margin:32px auto 0;text-align:center">
           Порядок оплаты и дату запуска согласуем отдельно на старте работ.
         </p>
-      </div>
-    </section>
-
-    <!-- ============ 9. СЛЕДУЮЩИЕ ШАГИ ============ -->
-    <section class="section" id="sec-steps" data-dot="Шаги">
-      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">NEXT</div>
-      <div class="divider"></div>
-      <div class="container section__pad-top">
-        <div class="reveal" data-delay="0" style="margin-bottom:40px">
-          <div class="pill"><span class="pill__dot"></span>Следующие шаги</div>
-          <h2 class="h2" style="margin-top:24px;max-width:680px">Что происходит после согласования</h2>
-        </div>
-
-        <div class="steps-grid reveal" data-delay="30">
-          <div class="step-chip glass">
-            <div class="step-chip__num">1</div>
-            <div><b>Согласуем условия</b><p>Договариваемся об условиях и схеме мотивации.</p></div>
-          </div>
-          <div class="step-chip glass">
-            <div class="step-chip__num">2</div>
-            <div><b>Передаёте материалы</b><p>Материалы по продукту и условия амбассадорской программы: проценты, промокоды, правила выдачи тестовой карты.</p></div>
-          </div>
-          <div class="step-chip glass">
-            <div class="step-chip__num">3</div>
-            <div><b>Запускаем рекрутинг</b><p>Агентство запускает рекрутинг двух менеджеров по продажам и подготовку новой вкладки в CRM.</p></div>
-          </div>
-          <div class="step-chip glass">
-            <div class="step-chip__num">4</div>
-            <div><b>Онбординг команды</b><p>Проводим онбординг команды, запускаем ежедневные созвоны и первые холодные контакты.</p></div>
-          </div>
-          <div class="step-chip glass">
-            <div class="step-chip__num">5</div>
-            <div><b>Отчёт и итоги</b><p>Раз в неделю Вы получаете отчёт, в конце месяца мы вместе подводим итоги и решаем, как масштабировать.</p></div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -647,6 +759,16 @@
   <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Наверх">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__frame">
+      <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Закрыть"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Предыдущий скриншот" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Следующий скриншот" hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      <span class="lightbox__screen"><img id="lightboxImg" src="" alt="Скриншот"></span>
+      <img class="lightbox__frame-img" src="./images/phone/iphone-frame.png" alt="" aria-hidden="true">
+    </div>
+  </div>
 
   <script src="script.js"></script>
   <script src="wow.js"></script>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMETA × Хочу Плачу! — Фокус-группа амбассадоров</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="wow.css">
+</head>
+
+<body>
+
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <nav class="section-dots" id="sectionDots" aria-hidden="true"></nav>
+  <div class="mobile-section-indicator" id="mobileSectionIndicator" aria-hidden="true"></div>
+
+  <div class="starfield" aria-hidden="true">
+    <div class="star-layer star-layer--small"></div>
+    <div class="star-layer star-layer--medium"></div>
+    <div class="star-layer star-layer--colored"></div>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:12%;left:18%"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:24%;left:72%;animation-delay:-0.8s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:38%;left:44%;animation-delay:-2s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:55%;left:9%;animation-delay:-1.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:4px;height:4px;top:68%;left:82%;animation-delay:-2.6s"></span>
+    <span class="accent-star accent-star--purple" style="width:3px;height:3px;top:81%;left:29%;animation-delay:-0.4s"></span>
+    <span class="accent-star accent-star--blue" style="width:3px;height:3px;top:92%;left:61%;animation-delay:-1.8s"></span>
+    <span class="accent-star accent-star--purple" style="width:4px;height:4px;top:6%;left:52%;animation-delay:-3s"></span>
+  </div>
+
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob ambient-blob--1"></div>
+    <div class="ambient-blob ambient-blob--2"></div>
+    <div class="ambient-blob ambient-blob--3"></div>
+    <div class="ambient-blob ambient-blob--4"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header">
+      <div class="container header__inner">
+        <img src="./images/kometa.png" alt="KOMETA logo" class="header__brand-logo">
+        <div class="header__label">Коммерческое предложение · 2026</div>
+        <div class="header__client">
+          <img src="./images/hochu-avatar.png" alt="Хочу Плачу!" class="header__avatar">
+          <span class="header__client-name">Хочу Плачу!</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero hero--compact" id="sec-hero" data-dot="Старт">
+      <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--purple" aria-hidden="true"></div>
+      <div class="circuit" aria-hidden="true">
+        <div class="circuit__line circuit__line--r" style="top:18%;right:0;width:18%"></div>
+        <div class="circuit__line circuit__line--r" style="top:36%;right:0;width:25%"></div>
+        <div class="circuit__line circuit__line--r" style="top:55%;right:0;width:32%"></div>
+        <div class="circuit__line circuit__line--r" style="top:73%;right:0;width:39%"></div>
+        <div class="circuit__line circuit__line--r" style="top:89%;right:0;width:46%"></div>
+        <div class="circuit__line circuit__line--l" style="top:22%;left:0;width:14%"></div>
+        <div class="circuit__line circuit__line--l" style="top:40%;left:0;width:19%"></div>
+        <div class="circuit__line circuit__line--l" style="top:58%;left:0;width:24%"></div>
+        <div class="circuit__line circuit__line--l" style="top:76%;left:0;width:29%"></div>
+        <div class="circuit__line circuit__line--l" style="top:92%;left:0;width:34%"></div>
+      </div>
+      <div class="particles" aria-hidden="true" id="particles"></div>
+
+      <div class="container hero__content">
+        <div class="reveal" data-delay="0">
+          <div class="pill"><span class="pill__dot"></span>Хочу Плачу! × Фокус-группа амбассадоров</div>
+        </div>
+
+        <h1 class="hero__title reveal" data-delay="80">ЗАПУСК ФОКУС-ГРУППЫ</h1>
+        <h1 class="hero__title hero__title--gradient reveal" data-delay="140">ПО АМБАССАДОРАМ «ХОЧУ ПЛАЧУ!»</h1>
+
+        <p class="hero__text reveal" data-delay="200">
+          От холодного контакта до работающего партнёра с картой и промокодом —
+          <span class="hl">делаем привлечение амбассадоров системным</span>
+        </p>
+
+        <div class="hero__meta reveal" data-delay="280">
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Блоков работы</div>
+            <div class="hero__meta-value"><span class="counter" data-count="5">0</span></div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Срок</div>
+            <div class="hero__meta-value">1,5 мес.</div>
+          </div>
+          <div class="hero__meta-item">
+            <div class="hero__meta-label">Для старта</div>
+            <div class="hero__meta-value">1790 $</div>
+          </div>
+        </div>
+
+        <div class="hero__scroll-cue reveal" data-delay="340" aria-hidden="true">
+          <span>Листайте</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 1. ЧТО УЖЕ РАБОТАЕТ ============ -->
+    <section class="section" id="sec-segments" data-dot="Сегменты">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">TRUST</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Что уже работает</div>
+          <h2 class="h2" style="margin-top:24px;max-width:760px">Личные рекомендации уже приносят продажи</h2>
+        </div>
+
+        <div class="reveal" data-delay="60" style="max-width:800px">
+          <p class="p-body">
+            Сервис «Хочу Плачу!» выпускает виртуальные карты зарубежного банка: ими можно оплачивать зарубежные сервисы, платить онлайн и за границей. Главный канал роста, который уже показывает хороший результат, — <span class="hl">личные рекомендации</span>. Сейчас лучше всего он работает в двух сегментах:
+          </p>
+        </div>
+
+        <div class="section__grid section__grid--2 reveal" data-delay="100">
+          <div class="about__callout glass">
+            <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+            <p><span class="about__callout-strong">Организаторы путешествий и турфирмы.</span> Их клиенты едут в путешествия и не понимают, как оплачивать покупки за границей, например в Китае или Таиланде. Карта закрывает эту проблему, а для турфирмы становится дополнением к основной услуге и источником дополнительных продаж.</p>
+          </div>
+          <div class="about__callout glass">
+            <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+            <p><span class="about__callout-strong">AI-учителя и наставники.</span> У них закрытые вебинары и личные наставничества по нейросетям. Чтобы оплатить нейросеть или зарубежный сервис, ученикам нужна зарубежная карта, а посредники берут высокую комиссию и добавляют рисков. Учитель рекомендует карту, и ученики решают задачу сразу.</p>
+          </div>
+        </div>
+
+        <p class="p-body reveal" data-delay="140" style="max-width:800px;margin-top:28px;margin-bottom:0">
+          В обоих случаях амбассадор не продаёт «ещё один продукт», а решает проблему своей аудитории. <span class="hl">Доверие к рекомендации работает лучше любой рекламы</span>, а за каждую продажу амбассадор получает процент. В процессе работы мы будем искать и тестировать и другие сегменты, где у аудитории есть такая же потребность.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 2. ИДЕЯ ============ -->
+    <section class="section" id="sec-idea" data-dot="Идея">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">SYSTEM</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Идея</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Зачем нужна фокус-группа</h2>
+        </div>
+
+        <div class="reveal" data-delay="40" style="max-width:800px">
+          <p class="p-body">
+            Привлечение амбассадоров уже идёт, и следующий шаг — сделать его системным. Для этого нужна выделенная команда, которая находит партнёров постоянно и ведёт каждого по одному и тому же понятному процессу, а за ней — рабочая среда, статистика и мотивация.
+          </p>
+          <p class="p-body" style="margin-bottom:0">
+            Мы предлагаем собрать такую фокус-группу и выстроить вокруг неё всю систему, чтобы за первый месяц отдел вышел на реальные продажи. Направление мы будем масштабировать и дальше. Уже в первый месяц мы планируем <span class="hl">тестировать различные рубрики и активности</span> для амбассадоров, чтобы повышать их мотивацию и вовлечённость.
+          </p>
+        </div>
+
+        <div class="reveal" data-delay="90" style="margin-top:32px;max-width:640px">
+          <div class="target-card target-card--accent glass">
+            <div class="target-card__title">Что получаете Вы</div>
+            <ul class="target-list">
+              <li>Постоянный поток новых амбассадоров, которым занимается выделенная команда</li>
+              <li>Единый процесс: от холодного сообщения до работающего партнёра с промокодом</li>
+              <li>Прозрачную статистику и расчёт премий в конце каждого месяца</li>
+              <li>Основу для масштабирования: новые менеджеры, новые сегменты, новые активности для амбассадоров</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. СОСТАВ ФОКУС-ГРУППЫ ============ -->
+    <section class="section" id="sec-team" data-dot="Команда">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">TEAM</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Состав фокус-группы</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Три роли и один понятный процесс</h2>
+        </div>
+
+        <div class="grid-3 reveal" data-delay="30">
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0116 0v1"/><rect x="2.6" y="13" width="3.4" height="5" rx="1.3"/><rect x="18" y="13" width="3.4" height="5" rx="1.3"/><path d="M18 18v1a3 3 0 01-3 3h-2"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Менеджер по продажам</div>
+              <div class="role-card__count">2 чел.</div>
+            </div>
+            <div class="role-card__desc">Холодный контакт с турагентствами, AI-учителями и другими сегментами, ответы на стартовые вопросы, стартовый онбординг. Заводит нового амбассадора в CRM.</div>
+          </div>
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v10.5H9l-4 3.5v-3.5H4z"/><path d="M8.5 10.3l2 2 4.5-4.5"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Аккаунт-менеджер</div>
+              <div class="role-card__count">1 чел.</div>
+            </div>
+            <div class="role-card__desc">Принимает амбассадора из CRM, пишет ему в Telegram, проводит полноценный онбординг и созвон, выдаёт бесплатную карту на тест и промокод, подключает к амбассадорской программе и ведёт дальше.</div>
+          </div>
+          <div class="glass role-card">
+            <div class="role-card__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8l3.2 3L12 5l4.8 6L20 8l-1.6 9.5H5.6L4 8z"/><path d="M8 20.5h8"/></svg></div>
+            <div class="role-card__head">
+              <div class="role-card__title">Руководитель фокус-группы</div>
+              <div class="role-card__count">KOMETA</div>
+            </div>
+            <div class="role-card__desc">Рекрутинг и обучение менеджеров, онбординг в рабочую среду агентства, новая вкладка в CRM, планы и отчётность, система премий, банка и баллов, ежедневные созвоны, тест рубрик, расчёт выплат.</div>
+          </div>
+        </div>
+
+        <div class="reveal" data-delay="60" style="margin-top:56px">
+          <div class="mono-caption" style="margin-bottom:8px">Как амбассадор проходит по воронке</div>
+          <h3 class="h2" style="font-size:clamp(20px,2.4vw,26px);max-width:620px;margin-top:4px">От холодного контакта до работающего партнёра</h3>
+        </div>
+
+        <div class="process reveal" data-delay="90" style="margin-top:40px">
+          <div class="process__line" aria-hidden="true"></div>
+          <div class="process__grid">
+            <div class="process__step">
+              <div class="process__num process__num--active">01</div>
+              <div class="process__card glass">
+                <div class="process__title">Холодный контакт</div>
+                <div class="process__desc">Менеджер по продажам пишет на холодную, отвечает на первые вопросы и проводит стартовый онбординг.</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">02</div>
+              <div class="process__card glass">
+                <div class="process__title">Карточка в CRM</div>
+                <div class="process__desc">Если партнёр заинтересован, менеджер создаёт в CRM карточку нового амбассадора и нажимает «Отправить».</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">03</div>
+              <div class="process__card glass">
+                <div class="process__title">Приём в Telegram</div>
+                <div class="process__desc">Аккаунт-менеджер принимает карточку в CRM и пишет амбассадору в Telegram.</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">04</div>
+              <div class="process__card glass">
+                <div class="process__title">Онбординг и карта</div>
+                <div class="process__desc">Аккаунт-менеджер проводит созвон, выдаёт бесплатную тестовую карту и промокод, подключает к программе.</div>
+              </div>
+            </div>
+            <div class="process__step">
+              <div class="process__num process__num--active">05</div>
+              <div class="process__card glass">
+                <div class="process__title">Сопровождение</div>
+                <div class="process__desc">Дальше аккаунт-менеджер сопровождает амбассадора и развивает его продажи.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="p-body reveal" data-delay="120" style="max-width:800px;margin-top:32px;margin-bottom:0">
+          Аккаунт-менеджер в группе уже есть. <span class="hl">Двух менеджеров по продажам агентство подбирает в рамках запуска.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 4. МАТЕМАТИКА ФОКУС-ГРУППЫ ============ -->
+    <section class="section" id="sec-math" data-dot="Математика">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">MATH</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Математика фокус-группы</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Небольшой фикс, премия — за результат</h2>
+        </div>
+
+        <div class="section__grid section__grid--2 reveal" data-delay="30">
+          <div class="glass role-card">
+            <div class="role-card__title" style="margin-bottom:4px">Менеджеры по продажам (2 человека)</div>
+            <ul class="feature-panel__list" style="margin-top:14px">
+              <li>Оплата: <span class="chip-inline chip-inline--mono">$200</span> в месяц каждому</li>
+              <li>Премия: <span class="chip-inline chip-inline--mono">+$25</span> за каждого нового амбассадора, который совершил минимум 10 продаж</li>
+              <li>Премия начинает работать только после первых 9 амбассадоров, и эти 9 амбассадоров должны набрать минимум 5 оплат</li>
+            </ul>
+          </div>
+          <div class="glass role-card">
+            <div class="role-card__title" style="margin-bottom:4px">Аккаунт-менеджер (1 человек)</div>
+            <ul class="feature-panel__list" style="margin-top:14px">
+              <li>Оплата: <span class="chip-inline chip-inline--mono">$400</span> в месяц</li>
+              <li>Премия <span class="chip-inline chip-inline--mono">+$10</span> за амбассадора, который набирает 10 оплат и более</li>
+              <li>Премия <span class="chip-inline chip-inline--mono">+$15</span> за амбассадора, который набирает 15 оплат и более</li>
+              <li>Премия <span class="chip-inline chip-inline--mono">+$30</span> за амбассадора, который набирает 30 оплат и более</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal" data-delay="70" style="margin-top:40px">
+          <table class="plan-table">
+            <thead>
+              <tr><th>Статья бюджета</th><th>Сумма</th><th>Комментарий</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Менеджеры по продажам, 2 × $200</td><td>$400 / мес</td><td>Фиксированная часть</td></tr>
+              <tr><td>Аккаунт-менеджер</td><td>$400 / мес</td><td>Фиксированная часть</td></tr>
+              <tr><td>Итого фиксированная часть</td><td>$800 / мес</td><td>До премий</td></tr>
+              <tr><td>Премии менеджеров и аккаунт-менеджера</td><td>По результатам</td><td>Зависят от продаж амбассадоров, считаются в конце месяца</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="p-body reveal" data-delay="100" style="max-width:800px;margin-top:28px;margin-bottom:0">
+          Оплаты фиксируются в конце месяца. Фиксированная часть невелика, а основные расходы появляются только тогда, когда амбассадоры реально приносят оплаты.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 5. ЧТО ДЕЛАЕТ АГЕНТСТВО ============ -->
+    <section class="section" id="sec-scope" data-dot="Работа">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">SCOPE</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Что делает агентство</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Пять связанных блоков</h2>
+          <p class="p-body" style="margin-top:20px;max-width:760px;margin-bottom:0">
+            Задача агентства — с нуля построить логику работы, объяснить её команде, структурировать и довести до реально работающего процесса. Работа идёт в <span class="hl">пяти блоках</span>.
+          </p>
+        </div>
+
+        <div class="scope-nav reveal" data-delay="20" id="scopeNav" aria-hidden="true"></div>
+
+        <div class="features-list" id="featuresList">
+
+          <!-- 01 -->
+          <div class="feature-panel glass reveal is-open" data-delay="0" data-dot-label="Рекрутинг">
+            <button type="button" class="feature-panel__head" aria-expanded="true">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">01</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gRecruit" x1="0" y1="0" x2="24" y2="24"><stop offset="0" stop-color="#504CFF"/><stop offset="1" stop-color="#854CFF"/></linearGradient></defs><circle cx="9" cy="8" r="3.2" fill="url(#gRecruit)" fill-opacity="0.22" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 19c0-3 2.5-5.2 5.5-5.2s5.5 2.2 5.5 5.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17.5" cy="8.5" r="2.3" stroke="currentColor" stroke-width="1.6"/><path d="M15.8 13.6c2.4.3 4.2 2.2 4.2 4.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="feature-panel__icon-spark" d="M18.6 2.3l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="url(#gRecruit)" stroke="none"/></svg></div>
+                <h3 class="feature-panel__title">Рекрутинг и онбординг менеджеров</h3>
+              </div>
+              <span class="feature-panel__chevron" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+              <p class="feature-panel__intro">С нуля находим и готовим людей, которые <span class="hl">будут вести холодный контакт</span> с турагентствами и AI-учителями.</p>
+              <div class="mono-caption" style="margin-bottom:10px">Что делаем</div>
+              <ul class="feature-panel__list">
+                <li>Составление вакансии и профиля кандидата, поиск двух менеджеров по продажам для холодного контакта</li>
+                <li>Отбор и собеседования</li>
+                <li>Онбординг сотрудников в компанию агентства: они работают на «Хочу Плачу!» в рабочей среде агентства</li>
+                <li>Обучение продукту, скриптам холодного контакта и работе с возражениями, встраивание человека во внутренний флоу</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="feature-panel glass reveal" data-delay="40" data-dot-label="Среда">
+            <button type="button" class="feature-panel__head" aria-expanded="false">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">02</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gDocs" x1="0" y1="0" x2="24" y2="24"><stop offset="0" stop-color="#504CFF"/><stop offset="1" stop-color="#854CFF"/></linearGradient></defs><rect x="4" y="4.5" width="16" height="16" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 4.5V3.3a1.3 1.3 0 011.3-1.3h4.4a1.3 1.3 0 011.3 1.3V4.5" stroke="currentColor" stroke-width="1.6"/><path class="feature-panel__icon-draw" d="M8 13l2.6 2.6L16.5 9.5" stroke="url(#gDocs)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="feature-panel__title">Рабочая среда и документы</h3>
+              </div>
+              <span class="feature-panel__chevron" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+              <p class="feature-panel__intro">Чтобы ничего не терялось, у команды должны быть <span class="hl">понятные планы, шаблоны и регламент звонков</span>.</p>
+              <div class="mono-caption" style="margin-bottom:10px">Что делаем</div>
+              <ul class="feature-panel__list">
+                <li>Внедрение конкретных планов и отчётов, подготовка документов и шаблонов, которыми пользуются менеджеры</li>
+                <li>Настройка в CRM задач и планов звонков, чтобы ничего не терялось</li>
+                <li>Внедрение в процесс регулярных звонков</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="feature-panel glass reveal" data-delay="80" data-dot-label="CRM">
+            <button type="button" class="feature-panel__head" aria-expanded="false">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">03</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gCrm" x1="0" y1="0" x2="24" y2="24"><stop offset="0" stop-color="#504CFF"/><stop offset="1" stop-color="#854CFF"/></linearGradient></defs><circle cx="4.5" cy="6" r="2.3" stroke="currentColor" stroke-width="1.6"/><circle cx="19.5" cy="6" r="2.3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="18.5" r="2.6" fill="url(#gCrm)" stroke="url(#gCrm)" stroke-width="1.6"/><path class="feature-panel__icon-draw" d="M6.3 7.7L10 16M17.7 7.7L14 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+                <h3 class="feature-panel__title">Новая вкладка в CRM под «Хочу Плачу!»</h3>
+              </div>
+              <span class="feature-panel__chevron" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+              <p class="feature-panel__intro">Отдельная вкладка в CRM, где <span class="hl">виден весь путь амбассадора</span> — от карточки до статуса.</p>
+              <div class="mono-caption" style="margin-bottom:10px">Что делаем</div>
+              <ul class="feature-panel__list feature-panel__list--cols">
+                <li>Менеджер по продажам заходит во вкладку, создаёт карточку нового амбассадора и отправляет её</li>
+                <li>Аккаунт-менеджер принимает амбассадора через CRM и связывается с ним в Telegram</li>
+                <li>Все амбассадоры, их источник и статус видны в одном месте</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="feature-panel glass reveal" data-delay="120" data-dot-label="Отчётность">
+            <button type="button" class="feature-panel__head" aria-expanded="false">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">04</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gRep" x1="0" y1="0" x2="24" y2="24"><stop offset="0" stop-color="#504CFF"/><stop offset="1" stop-color="#854CFF"/></linearGradient></defs><path d="M4.5 19.5V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M11 19.5V8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17.5 19.5V4.5" stroke="url(#gRep)" stroke-width="1.8" stroke-linecap="round"/><path class="feature-panel__icon-draw" d="M4 9.5l5-4 3.5 3 6-6" stroke="url(#gRep)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3 class="feature-panel__title">Прозрачная отчётность</h3>
+              </div>
+              <span class="feature-panel__chevron" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+              <p class="feature-panel__intro">В конце месяца должно быть видно, <span class="hl">кто и сколько привёл</span> — без ручных сверок.</p>
+              <div class="mono-caption" style="margin-bottom:10px">Что делаем</div>
+              <ul class="feature-panel__list">
+                <li>Настройка статистики так, чтобы в конце месяца было видно, сколько амбассадоров привёл каждый менеджер, сколько из них отработал аккаунт-менеджер и какая премия получилась</li>
+                <li>Согласование формата отчётов вместе с Вами</li>
+                <li>Еженедельный отчёт и подсчёт итогов в конце месяца</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="feature-panel glass reveal" data-delay="160" data-dot-label="Мотивация">
+            <button type="button" class="feature-panel__head" aria-expanded="false">
+              <div class="feature-panel__head-left">
+                <div class="feature-panel__num">05</div>
+                <div class="feature-panel__icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gMot" x1="0" y1="0" x2="24" y2="24"><stop offset="0" stop-color="#504CFF"/><stop offset="1" stop-color="#854CFF"/></linearGradient></defs><path d="M8 4.5h8v4.2a4 4 0 01-8 0V4.5z" stroke="currentColor" stroke-width="1.6" fill="url(#gMot)" fill-opacity="0.18"/><path d="M8 5.5H5.5a2 2 0 002 3.3M16 5.5h2.5a2 2 0 01-2 3.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 12.7v3.3M9.3 19.5h5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path class="feature-panel__icon-spark" d="M18.7 2.3l.55 1.25 1.25.55-1.25.55-.55 1.25-.55-1.25-1.25-.55 1.25-.55z" fill="url(#gMot)" stroke="none"/></svg></div>
+                <h3 class="feature-panel__title">Мотивация, ведение команды и развитие направления</h3>
+              </div>
+              <span class="feature-panel__chevron" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+            <div class="feature-panel__body-wrap">
+              <div class="feature-panel__body">
+              <p class="feature-panel__intro">Премии, дисциплина и поиск новых точек роста — <span class="hl">в одних руках</span>, без пробелов.</p>
+              <div class="mono-caption" style="margin-bottom:10px">Что делаем</div>
+              <ul class="feature-panel__list">
+                <li>Продумывание логики и механики премий для менеджеров и аккаунт-менеджера</li>
+                <li>Внедрение механики банка и баллов (подробности — в следующем разделе)</li>
+                <li>Отладка вопросов по выплатам сотрудникам</li>
+                <li>Ежедневные звонки с командой, разбор узких мест</li>
+                <li>Тест рубрик и активностей для амбассадоров, чтобы повышать их мотивацию, и поиск новых сегментов</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. ПОЧЕМУ ЭТО СРАБОТАЕТ ============ -->
+    <section class="section" id="sec-system" data-dot="Система">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">PROVEN</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:32px">
+          <div class="pill"><span class="pill__dot"></span>Почему это сработает</div>
+          <h2 class="h2" style="margin-top:24px;max-width:720px">Рабочая система уже есть</h2>
+          <p class="p-body" style="margin-top:20px;max-width:780px;margin-bottom:0">
+            Агентство не собирает процесс с нуля «на бумаге». У нас есть собственная CRM и AI-агент, которые каждый день управляют работой команды. Фокус-группа «Хочу Плачу!» будет работать в <span class="hl">уже проверенной среде</span>.
+          </p>
+        </div>
+
+        <div class="reveal" data-delay="40" style="margin-top:8px;margin-bottom:12px">
+          <div class="mono-caption">CRM агентства</div>
+        </div>
+        <div class="goals-grid reveal" data-delay="60">
+          <div class="goal-card glass">
+            <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+            <p><b>Задачи.</b> Доска «Сегодня / В процессе / Готово» с вкладками по отделам, включая отдел закупов. Двигать можно только свои задачи.</p>
+          </div>
+          <div class="goal-card glass">
+            <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+            <p><b>Звонки и иерархия.</b> Планирование звонков, структура отделов и руководителей.</p>
+          </div>
+          <div class="goal-card glass">
+            <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+            <p><b>Клиенты и архив.</b> Отдельное пространство под каждый проект. Для Вас будет добавлена новая вкладка приёма амбассадоров.</p>
+          </div>
+        </div>
+
+        <div class="about__callout glass reveal" data-delay="90" style="margin-top:16px">
+          <span class="glow-dot glow-dot--purple" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Мотивация.</span> Банк, баллы и уровни сотрудников и руководителей, история начислений, журнал звонков и журнал бота. Итоги выгружаются в Excel, PDF, Word, CSV и TXT, а месяц закрывается автоматически, и результаты фиксируются.</p>
+        </div>
+
+        <div class="reveal" data-delay="120" style="margin-top:44px;max-width:820px">
+          <div class="mono-caption" style="margin-bottom:10px">Как работает банк и баллы</div>
+          <p class="p-body">
+            У каждого сотрудника есть собственный банк. Заработанная премия, например <span class="chip-inline chip-inline--mono">$150</span> за амбассадоров аккаунт-менеджера с большим числом продаж, не выплачивается сразу, а ложится в его личный банк. Чтобы забрать её, сотруднику нужно пройти по шкале этапов (долей): на первом этапе ему доступна только часть банка (например, <span class="chip-inline chip-inline--mono">$40</span>), на втором больше (например, <span class="chip-inline chip-inline--mono">$80</span>) и так далее, а весь банк в <span class="chip-inline chip-inline--mono">$150</span> открывается на пятом этапе.
+          </p>
+          <p class="p-body" style="margin-bottom:0">
+            Двигаться по шкале помогают баллы. Они начисляются за выполнение внутреннего регламента: качественную работу, закрытые в срок задачи, участие во внутренних звонках. Сотрудник, который всё делает чётко, забирает весь свой банк, а нарушающий регламент оставляет часть премии в банке. <span class="hl">Для Вас это значит, что премия работает как инструмент дисциплины</span> — Вы платите за результат, а полную премию получает тот, кто ещё и соблюдает правила.
+          </p>
+        </div>
+
+        <div class="callout-note reveal" data-delay="150" style="margin-top:28px;max-width:820px">
+          <p>В Telegram работает наш AI-агент. Он напоминает сотрудникам о предстоящих звонках, а когда человек закрывает задачу в срок, присылает руководителю карточку «На проверке» с предложением начислить баллы по сложности задачи. Руководитель одним нажатием подтверждает или отклоняет начисление. Подсчёт баллов и контроль дисциплины не держатся на ручной работе.</p>
+        </div>
+
+        <div class="about__callout glass reveal" data-delay="180" style="margin-top:28px">
+          <span class="glow-dot glow-dot--blue" style="--size:6px;margin-top:3px"></span>
+          <p><span class="about__callout-strong">Что это даёт Вам:</span> Вы получаете не просто двух менеджеров, а управляемый отдел — с понятными задачами, контролем дисциплины, честной мотивацией и отчётностью, которую не нужно собирать вручную.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. РЕЗУЛЬТАТ ============ -->
+    <section class="section" id="sec-result" data-dot="Итог">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">RESULT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:16px">
+          <div class="pill"><span class="pill__dot"></span>Итог</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Что вы получите к концу первого месяца</h2>
+        </div>
+
+        <div class="rubric-grid reveal" data-delay="40" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:32px">
+          <div class="rubric-item glass"><div class="rubric-item__title">Готовая команда</div><div class="rubric-item__desc">Собранную и обученную фокус-группу из двух менеджеров по продажам и аккаунт-менеджера</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Рабочий процесс</div><div class="rubric-item__desc">От холодного контакта до подключения амбассадора с картой и промокодом</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Вкладка в CRM</div><div class="rubric-item__desc">Новая вкладка для приёма и ведения амбассадоров</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Система премий</div><div class="rubric-item__desc">Прозрачная статистика с итогами месяца</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Тесты активностей</div><div class="rubric-item__desc">Результаты тестов рубрик и активностей для амбассадоров</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Еженедельные отчёты</div><div class="rubric-item__desc">Понимание экономики направления</div></div>
+          <div class="rubric-item glass"><div class="rubric-item__title">Основа для роста</div><div class="rubric-item__desc">База для масштабирования: добавление менеджеров и выход в новые сегменты</div></div>
+        </div>
+
+        <div class="quote-card glass reveal" data-delay="80" style="margin-top:40px">
+          <div class="quote-card__scan"></div>
+          <div class="quote-card__mark" aria-hidden="true">&rdquo;</div>
+          <div class="quote-card__content">
+            <p class="quote-card__text">
+              Мы не просто ищем амбассадоров — мы строим управляемый отдел продаж по рекомендациям: с процессом, мотивацией и отчётностью, которые работают без ручного контроля.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. СТОИМОСТЬ И УСЛОВИЯ ============ -->
+    <section class="section" id="sec-price" data-dot="Стоимость">
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">PRICING</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:56px">
+          <div class="pill"><span class="pill__dot"></span>Стоимость и условия</div>
+          <h2 class="h2" style="margin-top:24px">Стоимость и условия</h2>
+        </div>
+
+        <div class="pricing-grid reveal" data-delay="30">
+          <div class="pricing-card pricing-card--highlight glass pricing-card--magnetic" id="magneticCard">
+            <div class="pricing-card__badge">Запуск и ведение</div>
+            <div class="mono-caption">УСЛУГИ АГЕНТСТВА</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">1790 $</span><span class="pricing-card__period">за проект</span></div>
+            <p class="pricing-card__desc">Рекрутинг и обучение команды, рабочая среда, новая вкладка в CRM, отчётность, мотивация и ведение направления</p>
+            <div class="pricing-card__sep pricing-card__sep--highlight"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Срок: 1,5 месяца</div>
+              <div class="pricing-card__feature"><span class="pricing-card__check pricing-card__check--highlight"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#504CFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>5 связанных блоков работы</div>
+            </div>
+          </div>
+
+          <div class="pricing-card glass">
+            <div class="pricing-card__badge">Команда</div>
+            <div class="mono-caption">ФОКУС-ГРУППА</div>
+            <div class="pricing-card__price"><span class="pricing-card__amount">800 $</span><span class="pricing-card__period">в месяц · до премий</span></div>
+            <p class="pricing-card__desc">Зарплаты и премии сотрудников фокус-группы — оплачиваются Вами по схеме из раздела «Математика фокус-группы»</p>
+            <div class="pricing-card__sep"></div>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Срок: 1,5 месяца</div>
+              <div class="pricing-card__feature"><span class="pricing-card__check"><svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>Премии — по результатам, расчёт в конце месяца</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="p-body reveal" data-delay="80" style="max-width:720px;margin:32px auto 0;text-align:center">
+          Порядок оплаты и дату запуска согласуем отдельно на старте работ.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 9. СЛЕДУЮЩИЕ ШАГИ ============ -->
+    <section class="section" id="sec-steps" data-dot="Шаги">
+      <div class="bg-word" style="left:-4%;transform:translate(0,-50%)">NEXT</div>
+      <div class="divider"></div>
+      <div class="container section__pad-top">
+        <div class="reveal" data-delay="0" style="margin-bottom:40px">
+          <div class="pill"><span class="pill__dot"></span>Следующие шаги</div>
+          <h2 class="h2" style="margin-top:24px;max-width:680px">Что происходит после согласования</h2>
+        </div>
+
+        <div class="steps-grid reveal" data-delay="30">
+          <div class="step-chip glass">
+            <div class="step-chip__num">1</div>
+            <div><b>Согласуем условия</b><p>Договариваемся об условиях и схеме мотивации.</p></div>
+          </div>
+          <div class="step-chip glass">
+            <div class="step-chip__num">2</div>
+            <div><b>Передаёте материалы</b><p>Материалы по продукту и условия амбассадорской программы: проценты, промокоды, правила выдачи тестовой карты.</p></div>
+          </div>
+          <div class="step-chip glass">
+            <div class="step-chip__num">3</div>
+            <div><b>Запускаем рекрутинг</b><p>Агентство запускает рекрутинг двух менеджеров по продажам и подготовку новой вкладки в CRM.</p></div>
+          </div>
+          <div class="step-chip glass">
+            <div class="step-chip__num">4</div>
+            <div><b>Онбординг команды</b><p>Проводим онбординг команды, запускаем ежедневные созвоны и первые холодные контакты.</p></div>
+          </div>
+          <div class="step-chip glass">
+            <div class="step-chip__num">5</div>
+            <div><b>Отчёт и итоги</b><p>Раз в неделю Вы получаете отчёт, в конце месяца мы вместе подводим итоги и решаем, как масштабировать.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" data-dot="Финал">
+      <div class="divider"></div>
+      <div class="bg-word" style="left:50%;transform:translate(-50%,-50%)">KOMETA</div>
+      <div class="container section__pad-top footer__inner">
+        <div class="reveal" data-delay="0">
+          <div class="footer__brand">
+            <div class="footer__brand-name">KOMETA</div>
+            <div class="footer__brand-sub">WEB3 AGENCY</div>
+          </div>
+          <h2 class="footer__title">Готовы строить<br>вместе?</h2>
+          <p class="footer__text">
+            Это предложение подготовлено исключительно для «Хочу Плачу!». Мы готовы обсудить детали
+            и согласовать старт работ по запуску фокус-группы амбассадоров.
+          </p>
+        </div>
+
+        <div class="footer__bottom reveal" data-delay="200">
+          <div class="mono-caption">© 2026 KOMETA · WEB3 AGENCY</div>
+          <div class="footer__bottom-mid">ПОДГОТОВЛЕНО ДЛЯ ХОЧУ ПЛАЧУ! · ФОКУС-ГРУППА АМБАССАДОРОВ</div>
+          <div class="mono-caption">KOMETA.WEB3</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="Наверх">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+  <script src="wow.js"></script>
+  <script src="interactive.js"></script>
+</body>
+
+</html>
